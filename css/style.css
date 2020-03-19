@@ -1,4 +1,4 @@
-.body {
+body {
     margin: 0;
 }
 
@@ -15,7 +15,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 20vh;
 
-    height: 75vh;
+    grid-auto-rows: calc(75vh / 4);
     width: 70vw;
 
     grid-template-areas: 
@@ -26,13 +26,43 @@
 }
 
 .topLeft {
-    background-color: blue;
+    background-color: lightblue;
     grid-area: tl;
+    padding: 7rem;
+    padding-top: 4rem;
+
+    background-image: url(/img/family.png);
+    background-position: right bottom;
+    background-size: 40vh;
+    background-repeat: no-repeat;
+}
+.topLeft h2{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: -0.175rem;
+    margin: 0;
+}
+.topLeft p {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+.topLeft .price {
+    color: white;
 }
 
 .topSideTop {
     background-color: orange;
     grid-area: tst;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topSideTop p{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: darkred;
 }
 
 .topSideBot {
