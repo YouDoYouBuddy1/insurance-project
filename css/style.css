@@ -1,0 +1,121 @@
+.body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+.topGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh;
+
+    height: 75vh;
+    width: 70vw;
+
+    grid-template-areas: 
+    "tl tl tl tst tst tst"
+    "tl tl tl tst tst tst"
+    "tl tl tl tsb tsb tsb"
+    "tl tl tl tsb tsb tsb";
+}
+
+.topLeft {
+    background-color: blue;
+    grid-area: tl;
+}
+
+.topSideTop {
+    background-color: orange;
+    grid-area: tst;
+}
+
+.topSideBot {
+    background-color: yellow;
+    grid-area: tsb;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgray;
+    width: 70vw;
+    height: 8vh;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh;
+
+    height: 275vh;
+    width: 70vw;
+
+    grid-template-areas: 
+    "mb mb mb mb mb mb"
+    "mb mb mb mb mb mb"
+    "mb mb mb mb mb mb"
+    "mb mb mb mb mb mb"
+    "au au au au au au"
+    "au au au au au au"
+    "au au au au au au"
+    "au au au au au au"
+    "hw hw h1 h1 h2 h2"
+    "hw hw h1 h1 h2 h2"
+    "h3 h3 h4 h4 h5 h5"
+    "h3 h3 h4 h4 h5 h5";
+}
+
+.mainBox {
+    background-color: gray;
+    grid-area: mb;
+}
+
+.aboutUs {
+    background-color: orange;
+    grid-area: au;
+}
+
+.howItWorks {
+    background-color: lightblue;
+    grid-area: hw;
+}
+
+.hiw1 {
+    background-color: whitesmoke;
+    grid-area: h1;
+}
+
+.hiw2 {
+    background-color: lightgray;
+    grid-area: h2;
+}
+
+.hiw3 {
+    background-color: whitesmoke;
+    grid-area: h3;
+}
+
+.hiw4 {
+    background-color: tomato;
+    grid-area: h4;
+}
+
+.hiw5 {
+    background-color: whitesmoke;
+    grid-area: h5;
+}
+
+.takeMeUp {
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+    width: 70vw;
+    height: 8vh;
+}
